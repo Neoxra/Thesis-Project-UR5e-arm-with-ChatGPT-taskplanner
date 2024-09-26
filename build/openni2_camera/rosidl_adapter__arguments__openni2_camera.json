@@ -1,6 +1,0 @@
-{
-  "package_name": "openni2_camera",
-  "non_idl_tuples": [
-    "/home/nick/arm_ws/src/openni2_camera/openni2_camera:srv/GetSerial.srv"
-  ]
-}
