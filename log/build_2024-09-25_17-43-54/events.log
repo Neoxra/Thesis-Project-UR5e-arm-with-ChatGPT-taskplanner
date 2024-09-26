@@ -1,0 +1,440 @@
+[0.000000] (-) TimerEvent: {}
+[0.000403] (openni2_camera) JobQueued: {'identifier': 'openni2_camera', 'dependencies': OrderedDict()}
+[0.000428] (perception) JobQueued: {'identifier': 'perception', 'dependencies': OrderedDict()}
+[0.000444] (openni2_camera) JobStarted: {'identifier': 'openni2_camera'}
+[0.004545] (perception) JobStarted: {'identifier': 'perception'}
+[0.010176] (openni2_camera) JobProgress: {'identifier': 'openni2_camera', 'progress': 'cmake'}
+[0.010707] (openni2_camera) Command: {'cmd': ['/usr/bin/cmake', '/home/nick/arm_ws/src/openni2_camera/openni2_camera', '-DCMAKE_INSTALL_PREFIX=/home/nick/arm_ws/install/openni2_camera'], 'cwd': '/home/nick/arm_ws/build/openni2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'nick'), ('GIO_MODULE_DIR', '/home/nick/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nick'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/nick/arm_ws/src'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/169/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/nick/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/169/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1594'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nick'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'nick'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/nick/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nick/.dotnet/tools'), ('SESSION_MANAGER', 'local/nick-portable:@/tmp/.ICE-unix/1565,unix/nick-portable:/tmp/.ICE-unix/1565'), ('GTK_EXE_PREFIX', '/snap/code/169/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fe95a975_e553_4df0_a8f9_302a8954bba6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/169/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/nick/.cache/dotnet_bundle_extract'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6P9MU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cbaf7eec7c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/nick/snap/code/169/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nick/arm_ws/build/openni2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/nick/snap/code/169/.local/share:/home/nick/snap/code/169:/snap/code/169/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.023685] (openni2_camera) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099726] (-) TimerEvent: {}
+[0.129232] (openni2_camera) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[0.147590] (openni2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.149518] (openni2_camera) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.154206] (openni2_camera) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.161713] (openni2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.171418] (openni2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.180993] (openni2_camera) StdoutLine: {'line': b'-- Found camera_info_manager: 3.1.9 (/opt/ros/humble/share/camera_info_manager/cmake)\n'}
+[0.199821] (-) TimerEvent: {}
+[0.233856] (openni2_camera) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.237110] (openni2_camera) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299929] (-) TimerEvent: {}
+[0.316669] (openni2_camera) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.340720] (openni2_camera) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.372179] (openni2_camera) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.382667] (openni2_camera) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.400041] (-) TimerEvent: {}
+[0.440871] (openni2_camera) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.441058] (openni2_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.497621] (openni2_camera) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.498570] (openni2_camera) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.500117] (-) TimerEvent: {}
+[0.546234] (perception) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/perception', 'build', '--build-base', '/home/nick/arm_ws/build/perception/build', 'install', '--record', '/home/nick/arm_ws/build/perception/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/nick/arm_ws/src/perception', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_AU:en', 'USER': 'nick', 'GIO_MODULE_DIR': '/home/nick/snap/code/common/.cache/gio-modules', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'GTK_EXE_PREFIX_VSCODE_SNAP_ORIG': '', 'GDK_BACKEND_VSCODE_SNAP_ORIG': '', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/nick', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'LOCPATH_VSCODE_SNAP_ORIG': '', 'OLDPWD': '/home/nick/arm_ws/src', 'TERM_PROGRAM_VERSION': '1.93.1', 'DESKTOP_SESSION': 'ubuntu', 'GTK_PATH': '/snap/code/169/usr/lib/x86_64-linux-gnu/gtk-3.0', 'GTK_IM_MODULE_FILE': '/home/nick/snap/code/common/.cache/immodules/immodules.cache', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_MAIN': '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/snap/code/169/usr/share/code/code', 'SYSTEMD_EXEC_PID': '1594', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'nick', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_SESSION_CLASS': 'user', 'XDG_DATA_DIRS_VSCODE_SNAP_ORIG': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'USERNAME': 'nick', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/nick/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nick/.dotnet/tools', 'SESSION_MANAGER': 'local/nick-portable:@/tmp/.ICE-unix/1565,unix/nick-portable:/tmp/.ICE-unix/1565', 'GTK_EXE_PREFIX': '/snap/code/169/usr', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fe95a975_e553_4df0_a8f9_302a8954bba6', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LOCPATH': '/snap/code/169/usr/lib/locale', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'DOTNET_BUNDLE_EXTRACT_BASE_DIR': '/home/nick/.cache/dotnet_bundle_extract', 'GIO_MODULE_DIR_VSCODE_SNAP_ORIG': '', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.6P9MU2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-cbaf7eec7c.sock', 'GNOME_TERMINAL_SERVICE': ':1.104', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'GSETTINGS_SCHEMA_DIR': '/home/nick/snap/code/169/.local/share/glib-2.0/schemas', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GTK_PATH_VSCODE_SNAP_ORIG': '', 'GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG': '', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/nick/arm_ws/build/perception', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/home/nick/snap/code/169/.local/share:/home/nick/snap/code/169:/snap/code/169/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/nick/arm_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nick/arm_ws/install/perception/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[0.600236] (-) TimerEvent: {}
+[0.603217] (openni2_camera) StdoutLine: {'line': b'-- Found image_transport: 3.1.9 (/opt/ros/humble/share/image_transport/cmake)\n'}
+[0.636254] (openni2_camera) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.10 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[0.658915] (openni2_camera) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.670277] (openni2_camera) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[0.670925] (openni2_camera) StdoutLine: {'line': b"-- Checking for module 'libopenni2'\n"}
+[0.682663] (openni2_camera) StdoutLine: {'line': b'--   Found libopenni2, version 2.2.0.3\n'}
+[0.700320] (-) TimerEvent: {}
+[0.757005] (perception) StdoutLine: {'line': b'running egg_info\n'}
+[0.757652] (perception) StdoutLine: {'line': b'writing ../../build/perception/perception.egg-info/PKG-INFO\n'}
+[0.757836] (perception) StdoutLine: {'line': b'writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt\n'}
+[0.757955] (perception) StdoutLine: {'line': b'writing entry points to ../../build/perception/perception.egg-info/entry_points.txt\n'}
+[0.758076] (perception) StdoutLine: {'line': b'writing requirements to ../../build/perception/perception.egg-info/requires.txt\n'}
+[0.758193] (perception) StdoutLine: {'line': b'writing top-level names to ../../build/perception/perception.egg-info/top_level.txt\n'}
+[0.759606] (perception) StdoutLine: {'line': b"reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[0.760254] (perception) StdoutLine: {'line': b"writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'\n"}
+[0.760405] (perception) StdoutLine: {'line': b'running build\n'}
+[0.760486] (perception) StdoutLine: {'line': b'running build_py\n'}
+[0.760586] (perception) StdoutLine: {'line': b'running install\n'}
+[0.760762] (perception) StdoutLine: {'line': b'running install_lib\n'}
+[0.761816] (perception) StdoutLine: {'line': b'running install_data\n'}
+[0.761936] (perception) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.763234] (perception) StdoutLine: {'line': b"removing '/home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[0.763390] (perception) StdoutLine: {'line': b'Copying ../../build/perception/perception.egg-info to /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info\n'}
+[0.764053] (perception) StdoutLine: {'line': b'running install_scripts\n'}
+[0.781779] (perception) StdoutLine: {'line': b"writing list of installed files to '/home/nick/arm_ws/build/perception/install.log'\n"}
+[0.800437] (-) TimerEvent: {}
+[0.802818] (perception) CommandEnded: {'returncode': 0}
+[0.813229] (perception) JobEnded: {'identifier': 'perception', 'rc': 0}
+[0.900539] (-) TimerEvent: {}
+[0.924971] (openni2_camera) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.000664] (-) TimerEvent: {}
+[1.100886] (-) TimerEvent: {}
+[1.181740] (openni2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201007] (-) TimerEvent: {}
+[1.281095] (openni2_camera) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.300252] (openni2_camera) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.301112] (-) TimerEvent: {}
+[1.302029] (openni2_camera) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.326285] (openni2_camera) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.326447] (openni2_camera) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.326501] (openni2_camera) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.326558] (openni2_camera) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.344254] (openni2_camera) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.393068] (openni2_camera) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.401211] (-) TimerEvent: {}
+[1.457901] (openni2_camera) StdoutLine: {'line': b'-- Generating done\n'}
+[1.460337] (openni2_camera) StdoutLine: {'line': b'-- Build files have been written to: /home/nick/arm_ws/build/openni2_camera\n'}
+[1.468184] (openni2_camera) CommandEnded: {'returncode': 0}
+[1.468733] (openni2_camera) JobProgress: {'identifier': 'openni2_camera', 'progress': 'build'}
+[1.469475] (openni2_camera) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/nick/arm_ws/build/openni2_camera', '--', '-j8', '-l8'], 'cwd': '/home/nick/arm_ws/build/openni2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'nick'), ('GIO_MODULE_DIR', '/home/nick/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nick'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/nick/arm_ws/src'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/169/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/nick/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/169/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1594'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nick'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'nick'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/nick/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nick/.dotnet/tools'), ('SESSION_MANAGER', 'local/nick-portable:@/tmp/.ICE-unix/1565,unix/nick-portable:/tmp/.ICE-unix/1565'), ('GTK_EXE_PREFIX', '/snap/code/169/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fe95a975_e553_4df0_a8f9_302a8954bba6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/169/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/nick/.cache/dotnet_bundle_extract'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6P9MU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cbaf7eec7c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/nick/snap/code/169/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nick/arm_ws/build/openni2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/nick/snap/code/169/.local/share:/home/nick/snap/code/169:/snap/code/169/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.501336] (-) TimerEvent: {}
+[1.503251] (openni2_camera) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.513673] (openni2_camera) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.517644] (openni2_camera) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/usb_reset.dir/src/usb_reset.c.o\x1b[0m\n'}
+[1.518583] (openni2_camera) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_convert.cpp.o\x1b[0m\n'}
+[1.518758] (openni2_camera) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_device_info.cpp.o\x1b[0m\n'}
+[1.518879] (openni2_camera) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_device.cpp.o\x1b[0m\n'}
+[1.519492] (openni2_camera) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/openni2_camera_driver.dir/rclcpp_components/node_main_openni2_camera_driver.cpp.o\x1b[0m\n'}
+[1.529990] (openni2_camera) StdoutLine: {'line': b'[ 14%] Built target ament_cmake_python_copy_openni2_camera\n'}
+[1.539151] (openni2_camera) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_timer_filter.cpp.o\x1b[0m\n'}
+[1.560646] (openni2_camera) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C executable usb_reset\x1b[0m\n'}
+[1.601592] (-) TimerEvent: {}
+[1.608200] (openni2_camera) StdoutLine: {'line': b'[ 18%] Built target usb_reset\n'}
+[1.630589] (openni2_camera) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_frame_listener.cpp.o\x1b[0m\n'}
+[1.701701] (-) TimerEvent: {}
+[1.807881] (-) TimerEvent: {}
+[1.908214] (-) TimerEvent: {}
+[2.009040] (-) TimerEvent: {}
+[2.030941] (openni2_camera) StdoutLine: {'line': b'[ 20%] Built target openni2_camera__cpp\n'}
+[2.042942] (openni2_camera) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_device_manager.cpp.o\x1b[0m\n'}
+[2.044466] (openni2_camera) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/openni2_camera__rosidl_generator_c.dir/rosidl_generator_c/openni2_camera/srv/detail/get_serial__functions.c.o\x1b[0m\n'}
+[2.106605] (openni2_camera) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_exception.cpp.o\x1b[0m\n'}
+[2.109139] (-) TimerEvent: {}
+[2.151246] (openni2_camera) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/openni2_wrapper.dir/src/openni2_video_mode.cpp.o\x1b[0m\n'}
+[2.209247] (-) TimerEvent: {}
+[2.212113] (openni2_camera) StdoutLine: {'line': b'[ 30%] \x1b[32m\x1b[1mLinking C shared library libopenni2_camera__rosidl_generator_c.so\x1b[0m\n'}
+[2.309365] (-) TimerEvent: {}
+[2.348590] (openni2_camera) StdoutLine: {'line': b'[ 30%] Built target openni2_camera__rosidl_generator_c\n'}
+[2.378589] (openni2_camera) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.409470] (-) TimerEvent: {}
+[2.451473] (openni2_camera) StdoutLine: {'line': b'running egg_info\n'}
+[2.452967] (openni2_camera) StdoutLine: {'line': b'creating openni2_camera.egg-info\n'}
+[2.453528] (openni2_camera) StdoutLine: {'line': b'writing openni2_camera.egg-info/PKG-INFO\n'}
+[2.454344] (openni2_camera) StdoutLine: {'line': b'writing dependency_links to openni2_camera.egg-info/dependency_links.txt\n'}
+[2.455009] (openni2_camera) StdoutLine: {'line': b'writing top-level names to openni2_camera.egg-info/top_level.txt\n'}
+[2.455278] (openni2_camera) StdoutLine: {'line': b"writing manifest file 'openni2_camera.egg-info/SOURCES.txt'\n"}
+[2.458814] (openni2_camera) StdoutLine: {'line': b"reading manifest file 'openni2_camera.egg-info/SOURCES.txt'\n"}
+[2.462609] (openni2_camera) StdoutLine: {'line': b"writing manifest file 'openni2_camera.egg-info/SOURCES.txt'\n"}
+[2.509598] (-) TimerEvent: {}
+[2.516407] (openni2_camera) StdoutLine: {'line': b'[ 32%] Built target ament_cmake_python_build_openni2_camera_egg\n'}
+[2.548050] (openni2_camera) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.572929] (openni2_camera) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.609694] (-) TimerEvent: {}
+[2.658969] (openni2_camera) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.710136] (-) TimerEvent: {}
+[2.810961] (-) TimerEvent: {}
+[2.883891] (openni2_camera) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/openni2_camera__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/openni2_camera/srv/get_serial__type_support.cpp.o\x1b[0m\n'}
+[2.912597] (-) TimerEvent: {}
+[3.012908] (-) TimerEvent: {}
+[3.068911] (openni2_camera) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/openni2_camera__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/openni2_camera/srv/detail/get_serial__type_support_c.cpp.o\x1b[0m\n'}
+[3.118986] (-) TimerEvent: {}
+[3.143154] (openni2_camera) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/openni2_camera__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/openni2_camera/srv/detail/dds_fastrtps/get_serial__type_support.cpp.o\x1b[0m\n'}
+[3.194008] (openni2_camera) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/openni2_camera__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/openni2_camera/srv/detail/get_serial__type_support.c.o\x1b[0m\n'}
+[3.219103] (-) TimerEvent: {}
+[3.291688] (openni2_camera) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libopenni2_camera__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.319221] (-) TimerEvent: {}
+[3.357885] (openni2_camera) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX shared library libopenni2_camera__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.380713] (openni2_camera) StdoutLine: {'line': b'[ 50%] Built target openni2_camera__rosidl_typesupport_introspection_c\n'}
+[3.410311] (openni2_camera) StdoutLine: {'line': b'[ 52%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.419347] (-) TimerEvent: {}
+[3.473660] (openni2_camera) StdoutLine: {'line': b'[ 52%] Built target openni2_camera__rosidl_typesupport_cpp\n'}
+[3.515985] (openni2_camera) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.519459] (-) TimerEvent: {}
+[3.621456] (-) TimerEvent: {}
+[3.721955] (-) TimerEvent: {}
+[3.822434] (-) TimerEvent: {}
+[3.870699] (openni2_camera) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libopenni2_camera__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.888208] (openni2_camera) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/openni2_camera__rosidl_typesupport_c.dir/rosidl_typesupport_c/openni2_camera/srv/get_serial__type_support.cpp.o\x1b[0m\n'}
+[3.892606] (openni2_camera) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libopenni2_camera__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.922550] (-) TimerEvent: {}
+[3.943107] (openni2_camera) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libopenni2_camera__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.001155] (openni2_camera) StdoutLine: {'line': b'[ 62%] Built target openni2_camera__rosidl_typesupport_fastrtps_cpp\n'}
+[4.022649] (-) TimerEvent: {}
+[4.039431] (openni2_camera) StdoutLine: {'line': b'[ 62%] Built target openni2_camera__rosidl_typesupport_c\n'}
+[4.053734] (openni2_camera) StdoutLine: {'line': b'[ 62%] Built target openni2_camera__rosidl_typesupport_fastrtps_c\n'}
+[4.122768] (-) TimerEvent: {}
+[4.133360] (openni2_camera) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/openni2_camera__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/openni2_camera/srv/detail/get_serial__type_support.cpp.o\x1b[0m\n'}
+[4.222888] (-) TimerEvent: {}
+[4.323210] (-) TimerEvent: {}
+[4.423544] (-) TimerEvent: {}
+[4.523860] (-) TimerEvent: {}
+[4.624185] (-) TimerEvent: {}
+[4.666148] (openni2_camera) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libopenni2_camera__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.724313] (-) TimerEvent: {}
+[4.753310] (openni2_camera) StdoutLine: {'line': b'[ 66%] Built target openni2_camera__rosidl_typesupport_introspection_cpp\n'}
+[4.778896] (openni2_camera) StdoutLine: {'line': b'[ 66%] Built target openni2_camera\n'}
+[4.802575] (openni2_camera) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[4.824425] (-) TimerEvent: {}
+[4.925052] (-) TimerEvent: {}
+[5.025371] (-) TimerEvent: {}
+[5.125835] (-) TimerEvent: {}
+[5.226174] (-) TimerEvent: {}
+[5.326525] (-) TimerEvent: {}
+[5.379336] (openni2_camera) StdoutLine: {'line': b'[ 68%] Built target openni2_camera__py\n'}
+[5.404474] (openni2_camera) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding C object CMakeFiles/openni2_camera__rosidl_generator_py.dir/rosidl_generator_py/openni2_camera/srv/_get_serial_s.c.o\x1b[0m\n'}
+[5.426610] (-) TimerEvent: {}
+[5.526942] (-) TimerEvent: {}
+[5.559835] (openni2_camera) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/openni2_camera/libopenni2_camera__rosidl_generator_py.so\x1b[0m\n'}
+[5.611321] (openni2_camera) StdoutLine: {'line': b'[ 72%] Built target openni2_camera__rosidl_generator_py\n'}
+[5.627824] (-) TimerEvent: {}
+[5.636843] (openni2_camera) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/openni2_camera__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.638972] (openni2_camera) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/openni2_camera__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.641229] (openni2_camera) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/openni2_camera__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.727941] (-) TimerEvent: {}
+[5.792594] (openni2_camera) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/openni2_camera/openni2_camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.801524] (openni2_camera) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/openni2_camera/openni2_camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.826335] (openni2_camera) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/openni2_camera/openni2_camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.832640] (-) TimerEvent: {}
+[5.846691] (openni2_camera) StdoutLine: {'line': b'[ 84%] Built target openni2_camera__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.860680] (openni2_camera) StdoutLine: {'line': b'[ 84%] Built target openni2_camera__rosidl_typesupport_introspection_c__pyext\n'}
+[5.879553] (openni2_camera) StdoutLine: {'line': b'[ 84%] Built target openni2_camera__rosidl_typesupport_c__pyext\n'}
+[5.930319] (openni2_camera) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking CXX executable openni2_camera_driver\x1b[0m\n'}
+[5.932750] (-) TimerEvent: {}
+[6.033067] (-) TimerEvent: {}
+[6.105450] (openni2_camera) StdoutLine: {'line': b'[ 86%] Built target openni2_camera_driver\n'}
+[6.133180] (-) TimerEvent: {}
+[6.233517] (-) TimerEvent: {}
+[6.333781] (-) TimerEvent: {}
+[6.434046] (-) TimerEvent: {}
+[6.534290] (-) TimerEvent: {}
+[6.570178] (openni2_camera) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX shared library libopenni2_wrapper.so\x1b[0m\n'}
+[6.634416] (-) TimerEvent: {}
+[6.727027] (openni2_camera) StdoutLine: {'line': b'[ 88%] Built target openni2_wrapper\n'}
+[6.734527] (-) TimerEvent: {}
+[6.743867] (openni2_camera) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/test_wrapper.dir/test/test_wrapper.cpp.o\x1b[0m\n'}
+[6.744033] (openni2_camera) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/list_devices.dir/src/list_devices.cpp.o\x1b[0m\n'}
+[6.744130] (openni2_camera) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding CXX object CMakeFiles/openni2_camera_lib.dir/src/openni2_driver.cpp.o\x1b[0m\n'}
+[6.834612] (-) TimerEvent: {}
+[6.934921] (-) TimerEvent: {}
+[7.035229] (-) TimerEvent: {}
+[7.135556] (-) TimerEvent: {}
+[7.235892] (-) TimerEvent: {}
+[7.336231] (-) TimerEvent: {}
+[7.436582] (-) TimerEvent: {}
+[7.536918] (-) TimerEvent: {}
+[7.637259] (-) TimerEvent: {}
+[7.737597] (-) TimerEvent: {}
+[7.837919] (-) TimerEvent: {}
+[7.938246] (-) TimerEvent: {}
+[8.038580] (-) TimerEvent: {}
+[8.138894] (-) TimerEvent: {}
+[8.239228] (-) TimerEvent: {}
+[8.339570] (-) TimerEvent: {}
+[8.439895] (-) TimerEvent: {}
+[8.540217] (-) TimerEvent: {}
+[8.640547] (-) TimerEvent: {}
+[8.740870] (-) TimerEvent: {}
+[8.841194] (-) TimerEvent: {}
+[8.941522] (-) TimerEvent: {}
+[9.041847] (-) TimerEvent: {}
+[9.142169] (-) TimerEvent: {}
+[9.172671] (openni2_camera) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable list_devices\x1b[0m\n'}
+[9.242289] (-) TimerEvent: {}
+[9.274758] (openni2_camera) StdoutLine: {'line': b'[ 96%] Built target list_devices\n'}
+[9.311334] (openni2_camera) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable test_wrapper\x1b[0m\n'}
+[9.342452] (-) TimerEvent: {}
+[9.425188] (openni2_camera) StdoutLine: {'line': b'[ 98%] Built target test_wrapper\n'}
+[9.442688] (-) TimerEvent: {}
+[9.543027] (-) TimerEvent: {}
+[9.643340] (-) TimerEvent: {}
+[9.743684] (-) TimerEvent: {}
+[9.844012] (-) TimerEvent: {}
+[9.944339] (-) TimerEvent: {}
+[10.044652] (-) TimerEvent: {}
+[10.144961] (-) TimerEvent: {}
+[10.245248] (-) TimerEvent: {}
+[10.345474] (-) TimerEvent: {}
+[10.445821] (-) TimerEvent: {}
+[10.546135] (-) TimerEvent: {}
+[10.646443] (-) TimerEvent: {}
+[10.746732] (-) TimerEvent: {}
+[10.846996] (-) TimerEvent: {}
+[10.947294] (-) TimerEvent: {}
+[11.047610] (-) TimerEvent: {}
+[11.147909] (-) TimerEvent: {}
+[11.248209] (-) TimerEvent: {}
+[11.348474] (-) TimerEvent: {}
+[11.448822] (-) TimerEvent: {}
+[11.549115] (-) TimerEvent: {}
+[11.649406] (-) TimerEvent: {}
+[11.749743] (-) TimerEvent: {}
+[11.850031] (-) TimerEvent: {}
+[11.950365] (-) TimerEvent: {}
+[12.004132] (openni2_camera) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libopenni2_camera_lib.so\x1b[0m\n'}
+[12.050476] (-) TimerEvent: {}
+[12.150907] (-) TimerEvent: {}
+[12.233058] (openni2_camera) StdoutLine: {'line': b'[100%] Built target openni2_camera_lib\n'}
+[12.241745] (openni2_camera) CommandEnded: {'returncode': 0}
+[12.250999] (-) TimerEvent: {}
+[12.306421] (openni2_camera) JobProgress: {'identifier': 'openni2_camera', 'progress': 'install'}
+[12.313496] (openni2_camera) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/nick/arm_ws/build/openni2_camera'], 'cwd': '/home/nick/arm_ws/build/openni2_camera', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'nick'), ('GIO_MODULE_DIR', '/home/nick/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/nick'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/nick/arm_ws/src'), ('TERM_PROGRAM_VERSION', '1.93.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/169/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/nick/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/169/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/169/usr/share/code/code'), ('SYSTEMD_EXEC_PID', '1594'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'nick'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'nick'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/nick/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/nick/.dotnet/tools'), ('SESSION_MANAGER', 'local/nick-portable:@/tmp/.ICE-unix/1565,unix/nick-portable:/tmp/.ICE-unix/1565'), ('GTK_EXE_PREFIX', '/snap/code/169/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fe95a975_e553_4df0_a8f9_302a8954bba6'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/169/usr/lib/locale'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('DOTNET_BUNDLE_EXTRACT_BASE_DIR', '/home/nick/.cache/dotnet_bundle_extract'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.6P9MU2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-cbaf7eec7c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.104'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/nick/snap/code/169/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/nick/arm_ws/build/openni2_camera'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/home/nick/snap/code/169/.local/share:/home/nick/snap/code/169:/snap/code/169/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[12.322391] (openni2_camera) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.322531] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/rosidl_interfaces/openni2_camera\n'}
+[12.322687] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera\n'}
+[12.322762] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg\n'}
+[12.322812] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.322878] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv\n'}
+[12.322938] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail\n'}
+[12.322984] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__functions.c\n'}
+[12.323050] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__type_support.h\n'}
+[12.323111] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__struct.h\n'}
+[12.323172] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__functions.h\n'}
+[12.323246] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/get_serial.h\n'}
+[12.323380] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/library_path.sh\n'}
+[12.323486] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/library_path.dsv\n'}
+[12.323685] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_generator_c.so\n'}
+[12.323866] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_generator_c.so" to ""\n'}
+[12.323923] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera\n'}
+[12.323978] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg\n'}
+[12.324038] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.324110] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv\n'}
+[12.324161] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail\n'}
+[12.324221] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_fastrtps_c.h\n'}
+[12.324282] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_fastrtps_c.so\n'}
+[12.324468] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[12.324528] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera\n'}
+[12.324608] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv\n'}
+[12.324655] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail\n'}
+[12.324719] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__builder.hpp\n'}
+[12.324765] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__struct.hpp\n'}
+[12.324825] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__traits.hpp\n'}
+[12.324885] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/get_serial.hpp\n'}
+[12.324979] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera\n'}
+[12.325044] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg\n'}
+[12.325089] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.325153] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv\n'}
+[12.325200] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail\n'}
+[12.325265] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/dds_fastrtps\n'}
+[12.325310] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.325364] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_fastrtps_cpp.so\n'}
+[12.325718] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[12.325794] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera\n'}
+[12.325843] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg\n'}
+[12.325908] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.325956] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv\n'}
+[12.326016] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail\n'}
+[12.326059] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__type_support.c\n'}
+[12.326118] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_introspection_c.h\n'}
+[12.326181] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_introspection_c.so\n'}
+[12.326403] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_introspection_c.so" to ""\n'}
+[12.326462] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_c.so\n'}
+[12.326666] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_c.so" to ""\n'}
+[12.326733] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera\n'}
+[12.326803] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv\n'}
+[12.326850] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail\n'}
+[12.326903] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.326946] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__type_support.cpp\n'}
+[12.327013] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_introspection_cpp.so\n'}
+[12.327251] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[12.327311] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_cpp.so\n'}
+[12.327510] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_cpp.so" to ""\n'}
+[12.327582] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/pythonpath.sh\n'}
+[12.327664] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/pythonpath.dsv\n'}
+[12.327764] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info\n'}
+[12.327870] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/PKG-INFO\n'}
+[12.327960] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/dependency_links.txt\n'}
+[12.328042] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/top_level.txt\n'}
+[12.328123] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/SOURCES.txt\n'}
+[12.328233] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera\n'}
+[12.328298] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.328400] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.328496] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_c.c\n'}
+[12.328587] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv\n'}
+[12.328653] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/_get_serial_s.c\n'}
+[12.328730] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/_get_serial.py\n'}
+[12.328816] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/__init__.py\n'}
+[12.328899] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.328998] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.329083] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/libopenni2_camera__rosidl_generator_py.so\n'}
+[12.329177] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/__init__.py\n'}
+[12.329253] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.351086] (-) TimerEvent: {}
+[12.356506] (openni2_camera) StdoutLine: {'line': b"Listing '/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera'...\n"}
+[12.356746] (openni2_camera) StdoutLine: {'line': b"Compiling '/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/__init__.py'...\n"}
+[12.356855] (openni2_camera) StdoutLine: {'line': b"Listing '/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv'...\n"}
+[12.356940] (openni2_camera) StdoutLine: {'line': b"Compiling '/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/__init__.py'...\n"}
+[12.357020] (openni2_camera) StdoutLine: {'line': b"Compiling '/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/_get_serial.py'...\n"}
+[12.361316] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.361548] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.361655] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.361878] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.362010] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[12.362247] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[12.362336] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_generator_py.so\n'}
+[12.362555] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_generator_py.so" to ""\n'}
+[12.362652] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial.idl\n'}
+[12.362754] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial.srv\n'}
+[12.362849] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial_Request.msg\n'}
+[12.362941] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial_Response.msg\n'}
+[12.363077] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/openni2_camera_driver\n'}
+[12.363388] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/openni2_camera_driver" to ""\n'}
+[12.363473] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/list_devices\n'}
+[12.363675] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/list_devices" to ""\n'}
+[12.363758] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera_lib.so\n'}
+[12.365695] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera_lib.so" to ""\n'}
+[12.365785] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_wrapper.so\n'}
+[12.366474] (openni2_camera) StdoutLine: {'line': b'-- Set runtime path of "/home/nick/arm_ws/install/openni2_camera/lib/libopenni2_wrapper.so" to ""\n'}
+[12.366566] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/usb_reset\n'}
+[12.366727] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include\n'}
+[12.366798] (openni2_camera) StdoutLine: {'line': b'-- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera\n'}
+[12.366886] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_frame_listener.h\n'}
+[12.366992] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_convert.h\n'}
+[12.367089] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_video_mode.h\n'}
+[12.367145] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_device_info.h\n'}
+[12.367232] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_driver.h\n'}
+[12.367280] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_exception.h\n'}
+[12.367325] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_device_manager.h\n'}
+[12.367390] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_timer_filter.h\n'}
+[12.367437] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_device.h\n'}
+[12.367494] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch\n'}
+[12.367565] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/camera_with_cloud_norgb.launch.py\n'}
+[12.367653] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/camera_only.launch.py\n'}
+[12.367733] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/camera_with_cloud.launch.py\n'}
+[12.367815] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/tfs.launch.py\n'}
+[12.367960] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/package_run_dependencies/openni2_camera\n'}
+[12.368098] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/parent_prefix_path/openni2_camera\n'}
+[12.368213] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/ament_prefix_path.sh\n'}
+[12.368322] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/ament_prefix_path.dsv\n'}
+[12.368432] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/path.sh\n'}
+[12.368543] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/path.dsv\n'}
+[12.368658] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.bash\n'}
+[12.368772] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.sh\n'}
+[12.368877] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.zsh\n'}
+[12.369006] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.dsv\n'}
+[12.369095] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/package.dsv\n'}
+[12.369236] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/packages/openni2_camera\n'}
+[12.369376] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_cExport.cmake\n'}
+[12.369493] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_cExport-noconfig.cmake\n'}
+[12.369633] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[12.369783] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[12.369896] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_cppExport.cmake\n'}
+[12.370016] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[12.370128] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[12.370249] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cExport.cmake\n'}
+[12.370359] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[12.370476] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cExport.cmake\n'}
+[12.370597] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[12.370720] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[12.370834] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[12.370961] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cppExport.cmake\n'}
+[12.371085] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[12.371192] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_pyExport.cmake\n'}
+[12.371306] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_pyExport-noconfig.cmake\n'}
+[12.371449] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/rclcpp_components/openni2_camera\n'}
+[12.371563] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/rosidl_cmake-extras.cmake\n'}
+[12.371674] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[12.371788] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[12.371896] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[12.372018] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[12.372120] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[12.372231] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[12.372337] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_cameraConfig.cmake\n'}
+[12.372425] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_cameraConfig-version.cmake\n'}
+[12.372593] (openni2_camera) StdoutLine: {'line': b'-- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/package.xml\n'}
+[12.374656] (openni2_camera) CommandEnded: {'returncode': 0}
+[12.450686] (openni2_camera) JobEnded: {'identifier': 'openni2_camera', 'rc': 0}
+[12.451245] (-) TimerEvent: {}
+[12.451305] (-) EventReactorShutdown: {}

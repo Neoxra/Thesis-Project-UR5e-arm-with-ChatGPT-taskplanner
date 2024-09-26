@@ -1,0 +1,176 @@
+[0.014s] Invoking command in '/home/nick/arm_ws/build/openni2_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nick/arm_ws/build/openni2_camera -- -j8 -l8
+[0.063s] [  2%] Built target openni2_camera__cpp
+[0.063s] [  8%] Built target openni2_camera__rosidl_generator_c
+[0.067s] [ 12%] Built target usb_reset
+[0.074s] [ 12%] Built target ament_cmake_python_copy_openni2_camera
+[0.080s] [ 16%] Built target openni2_camera_driver
+[0.081s] [ 34%] Built target openni2_wrapper
+[0.111s] [ 40%] Built target openni2_camera__rosidl_typesupport_cpp
+[0.112s] [ 46%] Built target openni2_camera__rosidl_typesupport_fastrtps_c
+[0.112s] [ 52%] Built target openni2_camera__rosidl_typesupport_fastrtps_cpp
+[0.119s] [ 58%] Built target openni2_camera__rosidl_typesupport_introspection_c
+[0.120s] [ 64%] Built target openni2_camera__rosidl_typesupport_c
+[0.125s] [ 70%] Built target openni2_camera__rosidl_typesupport_introspection_cpp
+[0.149s] [ 74%] Built target test_wrapper
+[0.157s] [ 78%] Built target openni2_camera_lib
+[0.157s] [ 82%] Built target list_devices
+[0.162s] [ 82%] Built target openni2_camera
+[0.178s] [ 84%] Built target openni2_camera__py
+[0.195s] [ 88%] Built target openni2_camera__rosidl_generator_py
+[0.216s] [ 96%] Built target openni2_camera__rosidl_typesupport_c__pyext
+[0.216s] [ 96%] Built target openni2_camera__rosidl_typesupport_introspection_c__pyext
+[0.221s] [100%] Built target openni2_camera__rosidl_typesupport_fastrtps_c__pyext
+[0.354s] running egg_info
+[0.355s] writing openni2_camera.egg-info/PKG-INFO
+[0.355s] writing dependency_links to openni2_camera.egg-info/dependency_links.txt
+[0.355s] writing top-level names to openni2_camera.egg-info/top_level.txt
+[0.357s] reading manifest file 'openni2_camera.egg-info/SOURCES.txt'
+[0.358s] writing manifest file 'openni2_camera.egg-info/SOURCES.txt'
+[0.380s] [100%] Built target ament_cmake_python_build_openni2_camera_egg
+[0.388s] Invoked command in '/home/nick/arm_ws/build/openni2_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nick/arm_ws/build/openni2_camera -- -j8 -l8
+[0.461s] Invoking command in '/home/nick/arm_ws/build/openni2_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nick/arm_ws/build/openni2_camera
+[0.467s] -- Install configuration: ""
+[0.467s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/rosidl_interfaces/openni2_camera
+[0.467s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera
+[0.467s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg
+[0.467s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_generator_c__visibility_control.h
+[0.467s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv
+[0.467s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail
+[0.467s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__functions.c
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__type_support.h
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__struct.h
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__functions.h
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/get_serial.h
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/library_path.sh
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/library_path.dsv
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_generator_c.so
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_fastrtps_c.h
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_fastrtps_c.so
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera
+[0.468s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__builder.hpp
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__struct.hpp
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__traits.hpp
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/get_serial.hpp
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/dds_fastrtps
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_fastrtps_cpp.hpp
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_fastrtps_cpp.so
+[0.469s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__type_support.c
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_introspection_c.h
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_introspection_c.so
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_c.so
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__rosidl_typesupport_introspection_cpp.hpp
+[0.470s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_camera/srv/detail/get_serial__type_support.cpp
+[0.471s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_introspection_cpp.so
+[0.471s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_typesupport_cpp.so
+[0.471s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/pythonpath.sh
+[0.471s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/pythonpath.dsv
+[0.471s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info
+[0.471s] -- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/PKG-INFO
+[0.471s] -- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/dependency_links.txt
+[0.472s] -- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/top_level.txt
+[0.472s] -- Installing: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera-2.0.2-py3.10.egg-info/SOURCES.txt
+[0.472s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera
+[0.472s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.472s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.472s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_c.c
+[0.472s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv
+[0.472s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/_get_serial_s.c
+[0.472s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/_get_serial.py
+[0.473s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv/__init__.py
+[0.473s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.473s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.473s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/libopenni2_camera__rosidl_generator_py.so
+[0.473s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/__init__.py
+[0.473s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/_openni2_camera_s.ep.rosidl_typesupport_introspection_c.c
+[0.499s] Listing '/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera'...
+[0.499s] Listing '/home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/srv'...
+[0.502s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[0.503s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[0.503s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/local/lib/python3.10/dist-packages/openni2_camera/openni2_camera_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[0.503s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera__rosidl_generator_py.so
+[0.503s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial.idl
+[0.503s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial.srv
+[0.504s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial_Request.msg
+[0.504s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/srv/GetSerial_Response.msg
+[0.504s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/openni2_camera_driver
+[0.504s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/list_devices
+[0.504s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_camera_lib.so
+[0.505s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/libopenni2_wrapper.so
+[0.505s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/lib/openni2_camera/usb_reset
+[0.505s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include
+[0.505s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera
+[0.505s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_frame_listener.h
+[0.505s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_convert.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_video_mode.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_device_info.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_driver.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_exception.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_device_manager.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_timer_filter.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/include/openni2_camera/openni2_device.h
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/camera_with_cloud_norgb.launch.py
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/camera_only.launch.py
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/camera_with_cloud.launch.py
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera//launch/tfs.launch.py
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/package_run_dependencies/openni2_camera
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/parent_prefix_path/openni2_camera
+[0.506s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/ament_prefix_path.sh
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/ament_prefix_path.dsv
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/path.sh
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/environment/path.dsv
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.bash
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.sh
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.zsh
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/local_setup.dsv
+[0.507s] -- Installing: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/package.dsv
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/packages/openni2_camera
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_cExport.cmake
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_cExport-noconfig.cmake
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cExport.cmake
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_cppExport.cmake
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.507s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cExport.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cExport.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cExport-noconfig.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cppExport.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cppExport.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_camera__rosidl_typesupport_cppExport-noconfig.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_pyExport.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/export_openni2_camera__rosidl_generator_pyExport-noconfig.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/ament_index/resource_index/rclcpp_components/openni2_camera
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/rosidl_cmake-extras.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.508s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_libraries-extras.cmake
+[0.509s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/ament_cmake_export_targets-extras.cmake
+[0.509s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.509s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.509s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_cameraConfig.cmake
+[0.509s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/cmake/openni2_cameraConfig-version.cmake
+[0.509s] -- Up-to-date: /home/nick/arm_ws/install/openni2_camera/share/openni2_camera/package.xml
+[0.511s] Invoked command in '/home/nick/arm_ws/build/openni2_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nick/arm_ws/build/openni2_camera

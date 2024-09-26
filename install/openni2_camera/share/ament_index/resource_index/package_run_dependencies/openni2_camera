@@ -1,0 +1,1 @@
+builtin_interfaces;camera_info_manager;libopenni2-dev;sensor_msgs;rclcpp;rclcpp_components;image_transport;depth_image_proc;rosidl_default_runtime

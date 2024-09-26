@@ -1,0 +1,3 @@
+[console_scripts]
+yolo_inference = perception.yolo_inference:main
+

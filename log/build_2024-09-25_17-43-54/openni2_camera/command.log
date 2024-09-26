@@ -1,0 +1,6 @@
+Invoking command in '/home/nick/arm_ws/build/openni2_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nick/arm_ws/src/openni2_camera/openni2_camera -DCMAKE_INSTALL_PREFIX=/home/nick/arm_ws/install/openni2_camera
+Invoked command in '/home/nick/arm_ws/build/openni2_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nick/arm_ws/src/openni2_camera/openni2_camera -DCMAKE_INSTALL_PREFIX=/home/nick/arm_ws/install/openni2_camera
+Invoking command in '/home/nick/arm_ws/build/openni2_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nick/arm_ws/build/openni2_camera -- -j8 -l8
+Invoked command in '/home/nick/arm_ws/build/openni2_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nick/arm_ws/build/openni2_camera -- -j8 -l8
+Invoking command in '/home/nick/arm_ws/build/openni2_camera': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nick/arm_ws/build/openni2_camera
+Invoked command in '/home/nick/arm_ws/build/openni2_camera' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nick/arm_ws/build/openni2_camera

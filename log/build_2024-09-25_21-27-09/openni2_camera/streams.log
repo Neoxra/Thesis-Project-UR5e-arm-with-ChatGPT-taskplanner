@@ -1,0 +1,29 @@
+[0.014s] Invoking command in '/home/nick/arm_ws/build/openni2_camera': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nick/arm_ws/install/perception:/opt/ros/humble VIRTUAL_ENV_PROMPT=(venv) /usr/bin/cmake --build /home/nick/arm_ws/build/openni2_camera -- -j8 -l8
+[0.064s] [  2%] Built target openni2_camera__cpp
+[0.080s] [ 12%] Built target openni2_camera__rosidl_generator_c
+[0.080s] [ 12%] Built target usb_reset
+[0.080s] [ 16%] Built target openni2_camera_driver
+[0.080s] [ 16%] Built target ament_cmake_python_copy_openni2_camera
+[0.087s] [ 34%] Built target openni2_wrapper
+[0.100s] [ 40%] Built target openni2_camera__rosidl_typesupport_cpp
+[0.101s] [ 46%] Built target openni2_camera__rosidl_typesupport_fastrtps_cpp
+[0.105s] [ 52%] Built target openni2_camera__rosidl_typesupport_fastrtps_c
+[0.108s] [ 58%] Built target openni2_camera__rosidl_typesupport_introspection_c
+[0.108s] [ 64%] Built target openni2_camera__rosidl_typesupport_c
+[0.110s] [ 70%] Built target openni2_camera__rosidl_typesupport_introspection_cpp
+[0.125s] [ 74%] Built target test_wrapper
+[0.134s] [ 78%] Built target list_devices
+[0.137s] [ 82%] Built target openni2_camera_lib
+[0.137s] [ 82%] Built target openni2_camera
+[0.154s] [ 84%] Built target openni2_camera__py
+[0.172s] [ 88%] Built target openni2_camera__rosidl_generator_py
+[0.191s] [ 92%] Built target openni2_camera__rosidl_typesupport_c__pyext
+[0.192s] [ 96%] Built target openni2_camera__rosidl_typesupport_introspection_c__pyext
+[0.198s] [100%] Built target openni2_camera__rosidl_typesupport_fastrtps_c__pyext
+[0.326s] running egg_info
+[0.327s] writing openni2_camera.egg-info/PKG-INFO
+[0.327s] writing dependency_links to openni2_camera.egg-info/dependency_links.txt
+[0.327s] writing top-level names to openni2_camera.egg-info/top_level.txt
+[0.329s] reading manifest file 'openni2_camera.egg-info/SOURCES.txt'
+[0.330s] writing manifest file 'openni2_camera.egg-info/SOURCES.txt'
+[0.356s] [100%] Built target ament_cmake_python_build_openni2_camera_egg

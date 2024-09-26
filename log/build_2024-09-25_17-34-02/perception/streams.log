@@ -1,0 +1,32 @@
+[0.520s] Invoking command in '/home/nick/arm_ws/src/perception': PYTHONPATH=/home/nick/arm_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nick/arm_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/nick/arm_ws/build/perception/build install --record /home/nick/arm_ws/build/perception/install.log --single-version-externally-managed install_data
+[0.718s] running egg_info
+[0.719s] creating ../../build/perception/perception.egg-info
+[0.719s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[0.719s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[0.719s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[0.719s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[0.719s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[0.719s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.721s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.722s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.722s] running build
+[0.722s] running build_py
+[0.722s] creating /home/nick/arm_ws/build/perception/build
+[0.722s] creating /home/nick/arm_ws/build/perception/build/lib
+[0.722s] creating /home/nick/arm_ws/build/perception/build/lib/perception
+[0.722s] copying perception/__init__.py -> /home/nick/arm_ws/build/perception/build/lib/perception
+[0.722s] running install
+[0.722s] running install_lib
+[0.723s] creating /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception
+[0.723s] copying /home/nick/arm_ws/build/perception/build/lib/perception/__init__.py -> /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception
+[0.724s] byte-compiling /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception/__init__.py to __init__.cpython-310.pyc
+[0.724s] running install_data
+[0.724s] creating /home/nick/arm_ws/install/perception/share/ament_index
+[0.724s] creating /home/nick/arm_ws/install/perception/share/ament_index/resource_index
+[0.724s] creating /home/nick/arm_ws/install/perception/share/ament_index/resource_index/packages
+[0.724s] copying resource/perception -> /home/nick/arm_ws/install/perception/share/ament_index/resource_index/packages
+[0.724s] copying package.xml -> /home/nick/arm_ws/install/perception/share/perception
+[0.724s] running install_egg_info
+[0.726s] Copying ../../build/perception/perception.egg-info to /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info
+[0.726s] running install_scripts
+[0.744s] writing list of installed files to '/home/nick/arm_ws/build/perception/install.log'

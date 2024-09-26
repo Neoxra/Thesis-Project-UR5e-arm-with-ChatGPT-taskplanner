@@ -1,0 +1,8 @@
+setup.py
+openni2_camera/__init__.py
+openni2_camera.egg-info/PKG-INFO
+openni2_camera.egg-info/SOURCES.txt
+openni2_camera.egg-info/dependency_links.txt
+openni2_camera.egg-info/top_level.txt
+openni2_camera/srv/__init__.py
+openni2_camera/srv/_get_serial.py

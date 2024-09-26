@@ -1,0 +1,4 @@
+source;share/openni2_camera/local_setup.bash
+source;share/openni2_camera/local_setup.dsv
+source;share/openni2_camera/local_setup.sh
+source;share/openni2_camera/local_setup.zsh

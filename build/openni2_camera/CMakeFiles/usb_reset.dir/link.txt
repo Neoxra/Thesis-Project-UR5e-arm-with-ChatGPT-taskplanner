@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/usb_reset.dir/src/usb_reset.c.o -o usb_reset 

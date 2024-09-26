@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/perception/perception.egg-info
+writing ../../build/perception/perception.egg-info/PKG-INFO
+writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+writing requirements to ../../build/perception/perception.egg-info/requires.txt
+writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nick/arm_ws/build/perception/build
+creating /home/nick/arm_ws/build/perception/build/lib
+creating /home/nick/arm_ws/build/perception/build/lib/perception
+copying perception/__init__.py -> /home/nick/arm_ws/build/perception/build/lib/perception
+running install
+running install_lib
+creating /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception
+copying /home/nick/arm_ws/build/perception/build/lib/perception/__init__.py -> /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception
+byte-compiling /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/nick/arm_ws/install/perception/share/ament_index
+creating /home/nick/arm_ws/install/perception/share/ament_index/resource_index
+creating /home/nick/arm_ws/install/perception/share/ament_index/resource_index/packages
+copying resource/perception -> /home/nick/arm_ws/install/perception/share/ament_index/resource_index/packages
+copying package.xml -> /home/nick/arm_ws/install/perception/share/perception
+running install_egg_info
+Copying ../../build/perception/perception.egg-info to /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/nick/arm_ws/build/perception/install.log'

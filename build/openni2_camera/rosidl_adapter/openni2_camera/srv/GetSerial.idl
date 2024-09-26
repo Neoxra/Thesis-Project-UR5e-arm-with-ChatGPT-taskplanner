@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from openni2_camera/srv/GetSerial.srv
+// generated code does not contain a copyright notice
+
+
+module openni2_camera {
+  module srv {
+    struct GetSerial_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetSerial_Response {
+      string serial;
+    };
+  };
+};

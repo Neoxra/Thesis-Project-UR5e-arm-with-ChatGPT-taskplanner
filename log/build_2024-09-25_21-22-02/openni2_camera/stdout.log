@@ -1,0 +1,28 @@
+[  2%] Built target openni2_camera__cpp
+[  6%] Built target usb_reset
+[ 12%] Built target openni2_camera__rosidl_generator_c
+[ 16%] Built target openni2_camera_driver
+[ 16%] Built target ament_cmake_python_copy_openni2_camera
+[ 34%] Built target openni2_wrapper
+[ 40%] Built target openni2_camera__rosidl_typesupport_cpp
+[ 52%] Built target openni2_camera__rosidl_typesupport_introspection_c
+[ 52%] Built target openni2_camera__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target openni2_camera__rosidl_typesupport_c
+[ 64%] Built target openni2_camera__rosidl_typesupport_fastrtps_c
+[ 70%] Built target openni2_camera__rosidl_typesupport_introspection_cpp
+[ 74%] Built target test_wrapper
+[ 74%] Built target openni2_camera
+[ 78%] Built target openni2_camera_lib
+[ 82%] Built target list_devices
+[ 84%] Built target openni2_camera__py
+[ 88%] Built target openni2_camera__rosidl_generator_py
+[ 92%] Built target openni2_camera__rosidl_typesupport_c__pyext
+[ 96%] Built target openni2_camera__rosidl_typesupport_introspection_c__pyext
+[100%] Built target openni2_camera__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing openni2_camera.egg-info/PKG-INFO
+writing dependency_links to openni2_camera.egg-info/dependency_links.txt
+writing top-level names to openni2_camera.egg-info/top_level.txt
+reading manifest file 'openni2_camera.egg-info/SOURCES.txt'
+writing manifest file 'openni2_camera.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_openni2_camera_egg

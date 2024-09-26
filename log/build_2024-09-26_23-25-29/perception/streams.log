@@ -1,0 +1,21 @@
+[0.676s] Invoking command in '/home/nick/arm_ws/src/perception': PYTHONPATH=/home/nick/arm_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nick/arm_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/nick/arm_ws/build/perception/build install --record /home/nick/arm_ws/build/perception/install.log --single-version-externally-managed install_data
+[0.902s] running egg_info
+[0.903s] writing ../../build/perception/perception.egg-info/PKG-INFO
+[0.903s] writing dependency_links to ../../build/perception/perception.egg-info/dependency_links.txt
+[0.903s] writing entry points to ../../build/perception/perception.egg-info/entry_points.txt
+[0.903s] writing requirements to ../../build/perception/perception.egg-info/requires.txt
+[0.903s] writing top-level names to ../../build/perception/perception.egg-info/top_level.txt
+[0.905s] reading manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.906s] writing manifest file '../../build/perception/perception.egg-info/SOURCES.txt'
+[0.907s] running build
+[0.907s] running build_py
+[0.907s] running install
+[0.907s] running install_lib
+[0.908s] running install_data
+[0.908s] running install_egg_info
+[0.910s] removing '/home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info' (and everything under it)
+[0.910s] Copying ../../build/perception/perception.egg-info to /home/nick/arm_ws/install/perception/lib/python3.10/site-packages/perception-0.0.1-py3.10.egg-info
+[0.911s] running install_scripts
+[0.931s] Installing yolo_inference script to /home/nick/arm_ws/install/perception/lib/perception
+[0.931s] writing list of installed files to '/home/nick/arm_ws/build/perception/install.log'
+[0.953s] Invoked command in '/home/nick/arm_ws/src/perception' returned '0': PYTHONPATH=/home/nick/arm_ws/build/perception/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nick/arm_ws/install/perception/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/perception build --build-base /home/nick/arm_ws/build/perception/build install --record /home/nick/arm_ws/build/perception/install.log --single-version-externally-managed install_data
