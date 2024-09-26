@@ -1,0 +1,6 @@
+[submodule "src/OpenNI2"]
+	path = src/OpenNI2
+	url = https://github.com/structureio/OpenNI2
+[submodule "src/openni2_camera"]
+	path = src/openni2_camera
+	url = https://github.com/ros-drivers/openni2_camera.git
