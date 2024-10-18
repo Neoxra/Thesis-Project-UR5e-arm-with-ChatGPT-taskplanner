@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'perception'
+package_name = 'brain'
 
 setup(
     name=package_name,
@@ -16,15 +16,16 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Nick',
+    maintainer='nick',
     maintainer_email='nickojbell@gmail.com',
-    description='Perception package for item detection and transforms',
-    license='Apache 2.0',
+    description='TODO: Package description',
+    license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'perception_node = perception.perception:main', 
-            'yolo_inference  = perception.yolo_inference:main', 
+            'brain_transformations = brain.brain_transformations:main',
+            'brain = brain.brain:main',
+            'system_test = brain.system_test:main',
         ],
     },
 )

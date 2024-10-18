@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/nick/arm_ws/install/perception/lib/python3.10/site-packages",
+        "/home/nick/arm_ws/install/openni2_camera/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/nick/arm_ws/install/perception/lib/python3.10/site-packages",
+        "/home/nick/arm_ws/install/openni2_camera/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

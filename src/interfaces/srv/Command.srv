@@ -1,0 +1,4 @@
+string command
+int32 item_id
+---
+string accept
