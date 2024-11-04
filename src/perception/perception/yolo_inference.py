@@ -1,11 +1,12 @@
 import rclpy
+import cv2
+import os
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from visualization_msgs.msg import Marker, MarkerArray
 from cv_bridge import CvBridge
-import cv2
+from interfaces.msg import Camera
 from ultralytics import YOLO
-import os
 
 class YoloNode(Node):
     def __init__(self):
@@ -31,53 +32,51 @@ class YoloNode(Node):
             Image, 'camera/rgb/image_raw', self.image_callback, 10
         )
         
-        # Marker publisher
-        self.marker_publisher = self.create_publisher(MarkerArray, 'yolo/markers', 10)
+        # Camera publisher
+        self.camera_publisher = self.create_publisher(Camera, 'camera/objects', 10)
+
+        # Timer to run YOLO inference intermittently (every 5 seconds)
+        self.timer = self.create_timer(5.0, self.run_yolo_inference)
 
         self.bridge = CvBridge()
+        self.image = None  # Store the latest image
 
     def image_callback(self, msg):
         try:
-            # Convert ROS Image message to OpenCV image
-            cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+            # Store the latest image for processing by the timer
+            self.image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        except Exception as e:
+            self.get_logger().error(f'Error processing image: {str(e)}')
 
-            # Run YOLO inference
-            results = self.model(cv_image)
-            self.get_logger().info(f'YOLO Results: {results}')
+    def run_yolo_inference(self):
+        # Check if there is an image available
+        if self.image is None:
+            self.get_logger().info('No image available for inference.')
+            return
 
-            # Create MarkerArray for bounding boxes
-            marker_array = MarkerArray()
+        try:
+            # Run YOLO detection on the latest image
+            results = self.model(self.image)
 
+            # Iterate through results and publish in Camera.msg format
             for i, result in enumerate(results):
                 for box in result.boxes:
-                    marker = Marker()
-                    marker.header.frame_id = 'camera_link'
-                    marker.type = Marker.CUBE
-                    marker.action = Marker.ADD
+                    self.get_logger().info(f'YOLO Results: {i}, {box}')
+                    # Create a Camera message for each detected object
+                    camera_msg = Camera()
+                    camera_msg.item_id = i + 1  # 1-based
+                    camera_msg.x = (box.xyxy[0] + box.xyxy[2]) / 2  # X center
+                    camera_msg.y = (box.xyxy[1] + box.xyxy[3]) / 2  # Y center
+                    camera_msg.z = 0.5  # Example depth, adjust as needed
 
-                    marker.pose.position.x = (box.xyxy[0] + box.xyxy[2]) / 2
-                    marker.pose.position.y = (box.xyxy[1] + box.xyxy[3]) / 2
-                    marker.pose.position.z = 0.5  # Adjust based on field of view
+                    # Publish the Camera message
+                    self.camera_publisher.publish(camera_msg)
 
-                    marker.scale.x = box.xyxy[2] - box.xyxy[0]
-                    marker.scale.y = box.xyxy[3] - box.xyxy[1]
-                    marker.scale.z = 0.1  # Thickness
-
-                    marker.color.a = 0.8
-                    marker.color.r = 0.0
-                    marker.color.g = 1.0
-                    marker.color.b = 0.0
-
-                    marker.id = i
-
-                    marker_array.markers.append(marker)
-
-            # Publish the markers
-            self.marker_publisher.publish(marker_array)
-
+                    # Optionally, log the detection
+                    self.get_logger().info(f'Published item {camera_msg.item_id} at '
+                                           f'x: {camera_msg.x}, y: {camera_msg.y}, z: {camera_msg.z}')
         except Exception as e:
-            self.get_logger().error(f"Error processing image: {str(e)}")
-
+            self.get_logger().error(f'Error running YOLO inference: {str(e)}')
 
 def main(args=None):
     rclpy.init(args=args)
