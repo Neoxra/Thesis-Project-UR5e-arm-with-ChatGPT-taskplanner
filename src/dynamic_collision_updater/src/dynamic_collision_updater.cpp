@@ -8,7 +8,7 @@
 #include <moveit_msgs/msg/collision_object.hpp>
 #include <shape_msgs/msg/solid_primitive.hpp>
 #include <unordered_map>
-#include <set>
+#include <chrono>
 
 class DynamicCollisionUpdater : public rclcpp::Node
 {
@@ -16,77 +16,96 @@ public:
     DynamicCollisionUpdater()
         : Node("dynamic_collision_updater"),
           tf_buffer_(this->get_clock()),
-          tf_listener_(tf_buffer_)
+          tf_listener_(tf_buffer_),
+          object_timeout_(std::chrono::milliseconds(250)) // Set timeout to 0.5 seconds
     {
         marker_sub_ = this->create_subscription<visualization_msgs::msg::MarkerArray>(
             "/yolo/dgb_kp_markers", 10,
             std::bind(&DynamicCollisionUpdater::markerCallback, this, std::placeholders::_1));
 
-        collision_pub_ = this->create_publisher<moveit_msgs::msg::CollisionObject>("collision_object", 10);
+        collision_timer_ = this->create_wall_timer(
+            std::chrono::milliseconds(100), // Check for timed-out objects every 0.1 seconds
+            std::bind(&DynamicCollisionUpdater::checkForExpiredObjects, this));
 
+        planning_scene_interface_ = std::make_shared<moveit::planning_interface::PlanningSceneInterface>();
         RCLCPP_INFO(this->get_logger(), "Dynamic Collision Updater Node initiated.");
     }
 
 private:
     rclcpp::Subscription<visualization_msgs::msg::MarkerArray>::SharedPtr marker_sub_;
+    rclcpp::TimerBase::SharedPtr collision_timer_;
     tf2_ros::Buffer tf_buffer_;
     tf2_ros::TransformListener tf_listener_;
-    moveit::planning_interface::PlanningSceneInterface planning_scene_interface_;
-    rclcpp::Publisher<moveit_msgs::msg::CollisionObject>::SharedPtr collision_pub_;
-    std::unordered_map<int, moveit_msgs::msg::CollisionObject> existing_objects_;  // Stores existing objects
+    std::shared_ptr<moveit::planning_interface::PlanningSceneInterface> planning_scene_interface_;
+    std::unordered_map<int, std::chrono::steady_clock::time_point> existing_objects_;
+    std::chrono::milliseconds object_timeout_;
 
     void markerCallback(const visualization_msgs::msg::MarkerArray::SharedPtr marker_array)
     {
-        std::set<int> current_ids;
+        auto now = std::chrono::steady_clock::now();
         for (const auto &marker : marker_array->markers)
         {
-            current_ids.insert(marker.id);
-            if (existing_objects_.count(marker.id))
-            {
-                updateCollisionObject(marker);
-            }
-            else
-            {
-                // Create a CollisionObject based on the Marker
-                moveit_msgs::msg::CollisionObject collision_object;
-                collision_object.id = "collision_object_" + std::to_string(marker.id);
-                collision_object.header.frame_id = "base_link"; // Replace with your planning frame
-                collision_object.operation = moveit_msgs::msg::CollisionObject::ADD;
+            // Update or add the object with a timestamp
+            existing_objects_[marker.id] = now;
 
-                // Set the primitive as a sphere
-                shape_msgs::msg::SolidPrimitive primitive;
-                primitive.type = shape_msgs::msg::SolidPrimitive::SPHERE;
-                primitive.dimensions.resize(1);
-                primitive.dimensions[0] = marker.scale.x / 2; // Radius
-
-                // Add the primitive and pose
-                auto transformed_pose = transformPose(marker.pose, marker.header.frame_id, "base_link");
-                if (transformed_pose == geometry_msgs::msg::Pose()) continue;
-
-                collision_object.primitives.push_back(primitive);
-                collision_object.primitive_poses.push_back(transformed_pose);
-
-                // Publish and add to existing_objects_ map
-                planning_scene_interface_.applyCollisionObject(collision_object);
-                existing_objects_[marker.id] = collision_object;  // Store as CollisionObject instead of Marker
-            }
+            // Add or update the collision object in MoveIt
+            addOrUpdateCollisionObject(marker);
         }
+    }
 
-        // Remove obsolete objects
+    void addOrUpdateCollisionObject(const visualization_msgs::msg::Marker &marker)
+    {
+        geometry_msgs::msg::Pose transformed_pose = transformPose(
+            marker.pose, marker.header.frame_id, "base_link"); // Replace with your planning frame
+
+        if (transformed_pose == geometry_msgs::msg::Pose())
+            return;
+
+        moveit_msgs::msg::CollisionObject collision_object;
+        collision_object.id = "collision_object_" + std::to_string(marker.id);
+        collision_object.header.frame_id = "base_link"; // Replace with your planning frame
+        collision_object.operation = moveit_msgs::msg::CollisionObject::ADD;
+
+        shape_msgs::msg::SolidPrimitive primitive;
+        primitive.type = shape_msgs::msg::SolidPrimitive::SPHERE;
+        primitive.dimensions.resize(1);
+        primitive.dimensions[0] = marker.scale.x / 2; // Radius
+
+        collision_object.primitives.push_back(primitive);
+        collision_object.primitive_poses.push_back(transformed_pose);
+
+        planning_scene_interface_->applyCollisionObject(collision_object);
+        RCLCPP_INFO(this->get_logger(), "Added/Updated collision object with ID %d", marker.id);
+    }
+
+    void checkForExpiredObjects()
+    {
+        auto now = std::chrono::steady_clock::now();
         for (auto it = existing_objects_.begin(); it != existing_objects_.end();)
         {
-            if (current_ids.find(it->first) == current_ids.end())
+            if (std::chrono::duration_cast<std::chrono::milliseconds>(now - it->second) > object_timeout_)
             {
+                // Object has timed out
                 removeCollisionObject(it->first);
-                it = existing_objects_.erase(it);
+                it = existing_objects_.erase(it); // Remove from map and advance iterator
             }
             else
             {
-                ++it;
+                ++it; // Move to the next object
             }
         }
     }
 
+    void removeCollisionObject(int marker_id)
+    {
+        moveit_msgs::msg::CollisionObject collision_object;
+        collision_object.id = "collision_object_" + std::to_string(marker_id);
+        collision_object.header.frame_id = "base_link"; // Replace with your planning frame
+        collision_object.operation = moveit_msgs::msg::CollisionObject::REMOVE;
+
+        planning_scene_interface_->applyCollisionObject(collision_object);
+        RCLCPP_INFO(this->get_logger(), "Removed collision object with ID %d", marker_id);
+    }
 
     geometry_msgs::msg::Pose transformPose(
         const geometry_msgs::msg::Pose &pose,
@@ -109,66 +128,6 @@ private:
         {
             RCLCPP_ERROR(this->get_logger(), "Transform failed: %s", ex.what());
             return geometry_msgs::msg::Pose();
-        }
-    }
-
-    void addCollisionObject(const visualization_msgs::msg::Marker &marker)
-    {
-        auto transformed_pose = transformPose(
-            marker.pose, marker.header.frame_id, "base_link"); // Replace with your planning frame
-        if (transformed_pose == geometry_msgs::msg::Pose())
-            return;
-
-        moveit_msgs::msg::CollisionObject collision_object;
-        collision_object.id = "collision_object_" + std::to_string(marker.id);
-        collision_object.header.frame_id = "base_link"; // Replace with your planning frame
-        collision_object.operation = moveit_msgs::msg::CollisionObject::ADD;
-
-        shape_msgs::msg::SolidPrimitive primitive;
-        primitive.type = shape_msgs::msg::SolidPrimitive::SPHERE;
-        primitive.dimensions.resize(1);
-        primitive.dimensions[0] = marker.scale.x / 2; // Radius
-
-        collision_object.primitives.push_back(primitive);
-        collision_object.primitive_poses.push_back(transformed_pose);
-
-        planning_scene_interface_.applyCollisionObject(collision_object);
-    }
-
-    void updateCollisionObject(const visualization_msgs::msg::Marker &marker)
-    {
-        auto transformed_pose = transformPose(
-            marker.pose, marker.header.frame_id, "base_link"); // Replace with your planning frame
-        if (transformed_pose == geometry_msgs::msg::Pose())
-            return;
-
-        moveit_msgs::msg::CollisionObject collision_object;
-        collision_object.id = "collision_object_" + std::to_string(marker.id);
-        collision_object.header.frame_id = "base_link"; // Replace with your planning frame
-        collision_object.operation = moveit_msgs::msg::CollisionObject::MOVE;
-
-        collision_object.primitive_poses.push_back(transformed_pose);
-
-        planning_scene_interface_.applyCollisionObject(collision_object);
-    }
-
-    void removeCollisionObject(int marker_id)
-    {
-        if (existing_objects_.count(marker_id) > 0)
-        {
-            RCLCPP_INFO(this->get_logger(), "Removing object with ID %d", marker_id);
-
-            moveit_msgs::msg::CollisionObject collision_object;
-            collision_object.id = "collision_object_" + std::to_string(marker_id);
-            collision_object.header.frame_id = "base_link";  // Replace with your planning frame
-            collision_object.operation = moveit_msgs::msg::CollisionObject::REMOVE;
-
-            collision_pub_->publish(collision_object);
-            existing_objects_.erase(marker_id);  // Remove from the map
-        }
-        else
-        {
-            RCLCPP_WARN(this->get_logger(), "Tried to remove object with ID %d, but it does not exist.", marker_id);
         }
     }
 };
