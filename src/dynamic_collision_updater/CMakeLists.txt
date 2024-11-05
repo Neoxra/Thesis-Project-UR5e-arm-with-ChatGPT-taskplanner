@@ -19,8 +19,12 @@ find_package(moveit_ros_planning_interface REQUIRED)
 add_executable(dynamic_collision_updater src/dynamic_collision_updater.cpp)
 ament_target_dependencies(dynamic_collision_updater rclcpp visualization_msgs geometry_msgs tf2_ros std_msgs moveit moveit_msgs moveit_ros_planning_interface)
 
+add_executable(camera_tf_broadcaster src/camera_tf_broadcaster.cpp)
+ament_target_dependencies(camera_tf_broadcaster rclcpp tf2_ros geometry_msgs)
+
 install(TARGETS
 dynamic_collision_updater
+camera_tf_broadcaster
 DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY

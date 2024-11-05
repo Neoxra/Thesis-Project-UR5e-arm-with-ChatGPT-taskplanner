@@ -10,6 +10,8 @@
 #include <unordered_map>
 #include <chrono>
 
+const std::string PLANNING_FRAME = "base_link";
+
 class DynamicCollisionUpdater : public rclcpp::Node
 {
 public:
@@ -56,14 +58,14 @@ private:
     void addOrUpdateCollisionObject(const visualization_msgs::msg::Marker &marker)
     {
         geometry_msgs::msg::Pose transformed_pose = transformPose(
-            marker.pose, marker.header.frame_id, "base_link"); // Replace with your planning frame
+            marker.pose, marker.header.frame_id, PLANNING_FRAME); // Replace with your planning frame
 
         if (transformed_pose == geometry_msgs::msg::Pose())
             return;
 
         moveit_msgs::msg::CollisionObject collision_object;
         collision_object.id = "collision_object_" + std::to_string(marker.id);
-        collision_object.header.frame_id = "base_link"; // Replace with your planning frame
+        collision_object.header.frame_id = PLANNING_FRAME; // Replace with your planning frame
         collision_object.operation = moveit_msgs::msg::CollisionObject::ADD;
 
         shape_msgs::msg::SolidPrimitive primitive;
@@ -100,7 +102,7 @@ private:
     {
         moveit_msgs::msg::CollisionObject collision_object;
         collision_object.id = "collision_object_" + std::to_string(marker_id);
-        collision_object.header.frame_id = "base_link"; // Replace with your planning frame
+        collision_object.header.frame_id = PLANNING_FRAME; // Replace with your planning frame
         collision_object.operation = moveit_msgs::msg::CollisionObject::REMOVE;
 
         planning_scene_interface_->applyCollisionObject(collision_object);
