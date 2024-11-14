@@ -28,6 +28,7 @@
   <depend>std_srvs</depend>
   <depend>tf2_ros</depend>
   <depend>trajectory_msgs</depend>
+  <depend>interfaces</depend>
 
   <exec_depend>controller_manager</exec_depend>
   <exec_depend>position_controllers</exec_depend>

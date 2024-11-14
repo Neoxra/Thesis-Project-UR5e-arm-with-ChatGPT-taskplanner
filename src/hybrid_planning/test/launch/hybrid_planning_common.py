@@ -287,7 +287,7 @@ def generate_common_hybrid_launch_description():
             use_fake_str = 'false'
         
         end_effector_path = os.path.join(
-            get_package_share_directory('end_effector_description'), 'urdf', 'end_effector_withDriverSupport.xacro'
+            get_package_share_directory('ur_description'), 'urdf', 'ur.urdf.xacro'
         )
 
         ur_control_launch_args = {

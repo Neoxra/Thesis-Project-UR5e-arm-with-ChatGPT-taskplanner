@@ -5,10 +5,5 @@ float64 elbow_joint
 float64 wrist_1_joint
 float64 wrist_2_joint
 float64 wrist_3_joint
-
-# float64 x
-# float64 y
-# float64 z
-
 ---
 bool success
