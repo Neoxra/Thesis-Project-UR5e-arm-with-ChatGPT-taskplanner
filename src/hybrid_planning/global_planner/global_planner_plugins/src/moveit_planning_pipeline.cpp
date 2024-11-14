@@ -63,8 +63,8 @@ bool MoveItPlanningPipeline::initialize(const rclcpp::Node::SharedPtr& node)
   node->declare_parameter<std::string>(PLAN_REQUEST_PARAM_NS + "planning_pipeline", UNDEFINED);
   node->declare_parameter<int>(PLAN_REQUEST_PARAM_NS + "planning_attempts", 5);
   node->declare_parameter<double>(PLAN_REQUEST_PARAM_NS + "planning_time", 1.0);
-  node->declare_parameter<double>(PLAN_REQUEST_PARAM_NS + "max_velocity_scaling_factor", 1.0);
-  node->declare_parameter<double>(PLAN_REQUEST_PARAM_NS + "max_acceleration_scaling_factor", 1.0);
+  node->declare_parameter<double>(PLAN_REQUEST_PARAM_NS + "max_velocity_scaling_factor", 0.2);
+  node->declare_parameter<double>(PLAN_REQUEST_PARAM_NS + "max_acceleration_scaling_factor", 0.2);
   node->declare_parameter<std::string>("ompl.planning_plugin", "ompl_interface/OMPLPlanner");
 
   // Planning Scene options

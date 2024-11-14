@@ -217,10 +217,10 @@ public:
 
     moveit::core::robotStateToRobotStateMsg(*robot_state, goal_motion_request.start_state);
     goal_motion_request.group_name = planning_group;
-    goal_motion_request.num_planning_attempts = 10;
+    goal_motion_request.num_planning_attempts = 20;
     goal_motion_request.max_velocity_scaling_factor = 0.1;
     goal_motion_request.max_acceleration_scaling_factor = 0.1;
-    goal_motion_request.allowed_planning_time = 2.0;
+    goal_motion_request.allowed_planning_time = 3.0;
     goal_motion_request.planner_id = "ompl";
     goal_motion_request.pipeline_id = "ompl";
 

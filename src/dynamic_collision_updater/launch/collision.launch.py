@@ -1,7 +1,24 @@
+import os
+import sys
 import launch
+from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from ament_index_python.packages import get_package_share_directory
+
+path = os.path.join(get_package_share_directory('moveit_hybrid_planning'), 'launch')
+print("Path to launch folder:", path)
+sys.path.append(path)
+
+# Import custom configuration functions
+from hybrid_planning_common import (
+    get_robot_description,
+    get_robot_description_semantic,
+)
 
 def generate_launch_description():
+
     # Define the dynamic_collision_updater node
     collision_node = Node(
         package="dynamic_collision_updater",
@@ -9,7 +26,8 @@ def generate_launch_description():
         name="collision",
         output="screen",
         parameters=[
-            # {"planning_frame": "base_link"},
+            get_robot_description(),
+            get_robot_description_semantic(),
         ],
     )
 
