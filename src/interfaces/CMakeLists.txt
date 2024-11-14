@@ -16,6 +16,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/ArmMovement.srv"
   "srv/Command.srv"
   "srv/Inventory.srv"
+  "srv/HybridCmd.srv"
   DEPENDENCIES std_msgs
 )
 

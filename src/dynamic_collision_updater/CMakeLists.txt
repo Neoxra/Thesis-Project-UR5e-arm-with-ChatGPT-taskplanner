@@ -15,6 +15,7 @@ find_package(std_msgs REQUIRED)
 find_package(moveit REQUIRED)
 find_package(moveit_msgs REQUIRED)
 find_package(moveit_ros_planning_interface REQUIRED)
+find_package(srdfdom REQUIRED)
 
 add_executable(dynamic_collision_updater src/dynamic_collision_updater.cpp)
 ament_target_dependencies(dynamic_collision_updater rclcpp visualization_msgs geometry_msgs tf2_ros std_msgs moveit moveit_msgs moveit_ros_planning_interface)
