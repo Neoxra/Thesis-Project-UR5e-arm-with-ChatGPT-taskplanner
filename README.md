@@ -56,7 +56,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## References
 
-📜 For a detailed breakdown, refer to the full [Thesis Document](https://github.com/YOUR_USERNAME/Your_Repo_Name/blob/main/Thesis___Nicholas_Bell.pdf).
+📜 For a detailed breakdown, refer to the full [Thesis Document](https://github.com/Neoxra/Thesis-Project-UR5e-arm-with-ChatGPT-taskplanner/blob/main/Thesis___Nicholas_Bell.pdf).
 
 ## Submodules
 
