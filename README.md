@@ -62,13 +62,13 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 This project utilizes external repositories to extend its functionality. A big thank you to the contributors of these projects for their efforts in making robotics more accessible and powerful!
 
-OpenNI2 Submodule
+- OpenNI2 Submodule
 
-📌 Path: src/OpenNI2
-🔗 Repository: structureio/OpenNI2
+    📌 Path: src/OpenNI2\
+    🔗 Repository: structureio/OpenNI2
 
-OpenNI2 Camera Submodule
+- OpenNI2 Camera Submodule
 
-📌 Path: src/openni2_camera
-🔗 Repository: ros-drivers/openni2_camera
+    📌 Path: src/openni2_camera\
+    🔗 Repository: ros-drivers/openni2_camera
 
