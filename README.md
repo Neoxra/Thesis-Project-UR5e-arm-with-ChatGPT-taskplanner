@@ -64,9 +64,11 @@ This project utilizes external repositories to extend its functionality. A big t
 
 OpenNI2 Submodule
 
-📌 Path: src/OpenNI2🔗 Repository: structureio/OpenNI2
+📌 Path: src/OpenNI2
+🔗 Repository: structureio/OpenNI2
 
 OpenNI2 Camera Submodule
 
-📌 Path: src/openni2_camera🔗 Repository: ros-drivers/openni2_camera
+📌 Path: src/openni2_camera
+🔗 Repository: ros-drivers/openni2_camera
 
