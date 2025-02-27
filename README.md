@@ -58,7 +58,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 📜 For a detailed breakdown, refer to the full [Thesis Document](https://github.com/YOUR_USERNAME/Your_Repo_Name/blob/main/Thesis___Nicholas_Bell.pdf).
 
-Submodules
+## Submodules
 
 This project utilizes external repositories to extend its functionality. A big thank you to the contributors of these projects for their efforts in making robotics more accessible and powerful!
 
