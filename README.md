@@ -1,6 +1,6 @@
-# Real-Time ChatGPT Hybrid Decision-Making for Safe Human-Robot Interaction
+# Early-stage exploration of using GPT for robotic task planning
 
-
+⚠️ This project was developed as part of a university thesis. Due to time constraints, it represents a functional prototype rather than a production-ready system. The repository has yet to be cleaned and organised. WIP>>>
 
 ## Overview
 
@@ -8,11 +8,9 @@ This project explores the integration of Large Language Models (LLMs), specifica
 
 ## Features
 
-✅ **Hybrid Decision-Making** – Combines reactive and deliberative control strategies for improved real-time decision-making.\
 ✅ **LLM-Based Task Planning** – Uses ChatGPT to process high-level natural language commands and convert them into actionable robot instructions.\
 ✅ **MoveIt Integration** – Implements a hybrid planner in ROS2 MoveIt for dynamic path planning and obstacle avoidance.\
-✅ **Human Detection and Interaction** – Utilizes a 3D depth camera and YOLO for real-time human pose estimation and collision avoidance.\
-✅ **Safe Human-Robot Collaboration** – Implements layered safety measures to prevent collisions and enhance operational efficiency.
+✅ **Human Detection and Interaction** – Utilizes a RGB-D camera and YOLO_ROS for real-time human pose estimation and collision avoidance.\
 
 ## System Architecture
 
@@ -71,4 +69,9 @@ This project utilizes external repositories to extend its functionality. A big t
 
     📌 Path: src/openni2_camera\
     🔗 Repository: ros-drivers/openni2_camera
+
+- YOLO_ROS Perception Submodule
+  
+    🔗 Repository: mgonzs13/yolo_ros
+
 
